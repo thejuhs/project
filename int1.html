@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="page1.css">
+    <!-- <script src="https://kit.fontawesome.com/1dcb44c300.js" crossorigin="anonymous"></script> -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            
+        }
+
+        section {
+          
+            background-image: linear-gradient(to left, yellow 20%, hotpink, hotpink);
+        }
+
+        #one {
+            background-color: white;
+        }
+
+        #two {
+            height: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            color: black;
+        }
+
+        #ty1, #ty3 {
+            display: none;
+        }
+
+        #ty2 {
+            height: 50px;
+            width: 70%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            color: black;
+            position: absolute;
+            left: 100px;
+           
+           
+           
+        }
+
+        .yu {
+            height: 40px;
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 500;
+        }
+
+        .rt {
+            height: 40px;
+            width: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+        }
+
+        #main {
+           
+            position: relative;
+            
+            height:90vh;
+            width: 100%;
+            background-image: url(./img1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position-y: -140px;
+            display: flex;
+            align-items: center;
+          
+        }
+
+        #sub {
+            
+            height: 150px;
+            width: 600px;
+            background-color: red;
+            opacity: 0.4;
+            font-family: 'Segoe UI', sans-serif;
+            color: white;
+            position: absolute;
+            top:107px;
+            left: 60px;
+            margin-top: 10px;
+           
+        }
+
+        #tr {
+            font-size:35px;
+            padding: 20px;
+            position:relative ;
+            left:5px;top:-10px;
+            opacity:0.9;
+            font-weight: bold;
+        }
+
+        #hy {
+            color: white;
+           position: relative;
+           left:25px;top:-25px;
+           font-size:15px;
+           /* border: 2px solid black; */
+           width:400px;
+            background-color: transparent;
+        
+
+
+        }
+
+        @media (max-width: 1024px) {
+            #ty1, #ty3 {
+                display: block;
+            }
+
+            #ty2 {
+                display: none;
+            }
+
+            #tr {
+                font-size: 30px;
+            }
+
+            #hy {
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            #two {
+                flex-direction: column;
+            }
+
+            #ty1, #ty3 {
+                display: block;
+                width: 100%;
+            }
+
+            #ty2 {
+                display: none;
+            }
+
+            #tr {
+                font-size: 24px;
+            }
+
+            #hy {
+                font-size: 12px;
+            }
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+       
+
+        #body {
+            /* border: 1px solid yellow; */
+            position: relative;
+            top: 80px;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-image: linear-gradient(to left, yellow 20%, hotpink, hotpink);
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        #order {
+            font-size: 30px;
+            font-weight: bold;
+            letter-spacing: 5px;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        #sec {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .thre {
+            height: 300px;
+            width: 210px;
+            background-color: white;
+           border-top-right-radius:25% ;
+           border-bottom-left-radius:25% ;
+            margin: 10px;
+            display: flex;
+            justify-content:space-evenly;
+            align-items: center;
+            position: relative;
+            left: 25%;
+        }
+
+        #image {
+           
+            height: 180px;
+            width:95%;
+
+            background-image:url(./img4.jpg);
+            background-repeat: no-repeat;
+            background-size:cover;
+             position: relative;
+             top: -15%;
+             left: 10px;
+             border-top-right-radius: 25%;
+        }
+
+        #image1 {
+            height: 180px;
+            width:95%;
+            
+            background-image: url(./img2.jpg);
+            background-repeat: no-repeat;
+            background-size:cover;
+             position: relative;
+             top:-15%;
+             left: 10px;
+             border-top-right-radius: 25%;
+        }
+
+        #image2 {
+            height: 180px;
+            width:95%;
+            
+            background-image: url(./img3.jpg);
+            background-repeat: no-repeat;
+            background-size:cover;
+            background-position-y:center;
+             position: relative;
+             top:-15%;
+             left: 10px;
+             border-top-right-radius: 25%;
+           
+        }
+
+        #ni, #ni1, #ni2 {
+            text-align: center;
+            margin: 10px;
+        }
+
+        #buto {
+            height: 50px;
+            width: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            border-radius: 25px;
+            background-color: white;
+            opacity: 0.4;
+            position: relative;
+            top: 78%;
+        }
+
+        #nb {
+            font-size: 20px;
+            color: black;
+            font-weight: bold;
+             z-index: 1;
+        }
+
+        @media (max-width: 1024px) {
+            #sec {
+                flex-direction: row;
+            }
+
+            .thre {
+                width: 150px;
+                height: 200px;
+            }
+
+            #ni, #ni1, #ni2 {
+                font-size: 16px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            #order {
+                font-size: 24px;
+            }
+
+            .thre {
+                width: 120px;
+                height: 160px;
+            }
+
+            #image, #image1, #image2 {
+                height: 140px;
+                width: 140px;
+            }
+
+            #ni, #ni1, #ni2 {
+                font-size: 14px;
+            }
+
+            #buto {
+                height: 40px;
+                width: 120px;
+                font-size: 16px;
+                
+            }
+
+            #nb {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section id="one">
+        <nav id="two">
+            <div class="ty" id="ty1"></div>
+
+            <div class="ty" id="ty2">
+                <div class="yu" id="yu1">Home</div>
+                <div class="yu" id="yu2"><a href="#order" style="text-decoration: none; color: black;">Order</a></div>
+                <div class="yu" id="yu3">Food</div>
+                <div class="yu" id="yu4">Restaurant</div>
+                <div class="yu" id="yu5">Testimonials</div>
+                <div class="yu" id="yu6">Contact Us</div>
+                <i class="fa-solid fa-phone-volume fa-xl"style="position: absolute;right: -20%;"></i>
+                <i class="fa-solid fa-cart-shopping fa-xl" style="position: absolute;right: -10%;"></i>
+
+            </div>
+            <div class="ty" id="ty3">
+                <div class="rt"><i class="fa-solid fa-cart-shopping fa-xl" ></i></div>
+                <div class="rt"><i class="fa-solid fa-cart-shopping"></i></div>
+            </div>
+        </nav>
+
+        <div id="main">
+            <div id="sub">
+                <h1 id="tr">LOREM IPSUM</h1>
+                <p id="hy">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section style=" height: 95px; position: absolute; width: 208.5vh; top: 600px; z-index: 1;">
+        <div>
+
+        </div>
+    </section>
+
+    
+
+    
+
+
+    <section id="body">
+        <div id="order">Order Now</div>
+        <nav id="sec">
+            <div class="thre" id="thr1">
+                <div id="image"></div>
+                <div id="ni">
+                    <b style="position: absolute;top: 200px;left:60PX; font-size: 20px;"> BURGER</b>
+                    <div style="font-size: 10px;position: absolute;top: 240px;left: 40px;">Lorem Ipsum has been the <br> industry's standard dummy text</div>
+                </div>
+            </div>
+
+            <div class="thre" id="thr2">
+                <div id="image1"></div>
+                <div id="ni1">
+                    
+                        
+                        <b style="position: absolute;top: 200px;left: 80px;font-size: 20px;">PIZZA </b>
+                    <div style="font-size: 10px;position: absolute;top: 240px;left: 40px;">Lorem Ipsum has been the <br>industry's standard dummy text</div>
+                </div>
+            </div>
+
+            <div class="thre" id="thr3">
+                <div id="image2"></div>
+                <div id="ni2">
+                    <b style="position: absolute;top: 200px;left: 80px;font-size: 20px;">PASTA</b>
+                    <div style="font-size: 10px;position: absolute;top: 240px;left:40px;">Lorem Ipsum has been the <br>industry's standard dummy text</div>
+                </div>
+            </div>
+        </nav>
+        <a href="" style="text-decoration: none; color: black; font-weight: bold;">
+            <div id="buto"></div>
+        </a>
+        <p id="nb">Order</p>
+    </section>
+</body>
+</html>
